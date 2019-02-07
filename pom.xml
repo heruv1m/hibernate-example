@@ -47,6 +47,12 @@
             <artifactId>logback-classic</artifactId>
             <version>0.9.28</version>
         </dependency>
+        <dependency>
+            <groupId>org.tuxdude.logback.extensions</groupId>
+            <artifactId>logback-colorizer</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

@@ -10,7 +10,7 @@
 
     <appender name="FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>c:/mkyongapp.log</file>
+        <file>hibernate-example.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
             </Pattern>
@@ -29,10 +29,10 @@
 
     </appender>
 
-    <logger name="org.hibernate.SQL" level="DEBUG"/>
-    <!--<logger name="org.hibernate" level="DEBUG"/>-->
+    <logger name="org.hibernate.persister.entity.AbstractEntityPersister" level="debug"/>
+    <logger name="org.hibernate" level="warn"/>
 
-    <root level="warn">
+    <root level="info">
         <appender-ref ref="FILE"/>
         <appender-ref ref="STDOUT"/>
     </root>

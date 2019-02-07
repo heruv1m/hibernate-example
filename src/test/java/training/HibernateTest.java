@@ -11,14 +11,13 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AppTest {
-    private static final Logger log = LoggerFactory.getLogger(AppTest.class);
+public class HibernateTest {
+    private static final Logger log = LoggerFactory.getLogger(HibernateTest.class);
 
     private SessionFactory sessionFactory;
 
     @Before
     public void setUp() {
-        // A SessionFactory is set up once for an application!
 
         Properties settings = new Properties();
         settings.put(Environment.DRIVER, "org.h2.Driver");
